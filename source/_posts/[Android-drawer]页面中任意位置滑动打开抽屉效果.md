@@ -1,9 +1,14 @@
-﻿> DrawerLayout侧滑手势必须在屏幕边缘才可以，效果不错，但是实际用起来比较费力。我们现在要实现全屏手势侧滑，即：在Activity中，任意位置滑动打开抽屉效果
+﻿---
+title: [Android-drawer]页面中任意位置滑动打开抽屉效果
+---
+
+>  DrawerLayout侧滑手势必须在屏幕边缘才可以，效果不错，但是实际用起来比较费力。我们现在要实现全屏手势侧滑，即：在Activity中，任意位置滑动打开抽屉效果
 > 分析转自 https://www.jianshu.com/p/432780e4749a
 
 **效果图如下：**
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/0cf921e1a0bd49d7bce21707ca9448fa.gif)
+
 实现方式：
 去掉ViewDragCallback的onEdgeTouch的实现
 重写onInterceptTouchEvent添加自己的拦截逻辑
